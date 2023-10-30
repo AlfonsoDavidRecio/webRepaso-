@@ -1,0 +1,69 @@
+<html>                    <!--Autor: Alfonso David Recio Calderon-->
+    <head>
+        <title>¿Cómo ser más responsable?</title>
+        <link rel="stylesheet" href="stilo.css" author="Alfonso David Recio Calderon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="Hdatos">
+            <a href="https://fundacionloyola.com/vguadalupe/"><img src="https://fundacionloyola.com/vguadalupe/wp-content/uploads/2019/12/logotipo.png" alt="esceulaVirgenDeGuadalupe" id="loyola"></a>
+            <h1 id="titulo">COMPRAS ONLINE MAS RESPONSABLES</h1>
+        </header>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html#in" >Introduccion</a></li>
+                <li><a href="#fo" >Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="fo">
+                <div>
+                    <h4><span class="negrita underline">Formulario</span></h4>
+                    <!-- PRINCIPIO FORMULARIO-->
+                    <form action="formulario.php" method="post">
+                        <p>
+                            <label>Nombre</label>
+                            <br>
+                            <input name="nombre" type="text">
+                        </p>
+                        <p>
+                            <label>Ciudad:</label><br>
+                            <select name="selection">
+                                <option value="ba">Badajoz</option>
+                                <option value="cc">Caceres</option>
+                                <option value="me">Merida</option>
+                                <option value="db">Don Benito</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Genero:</label><br>
+                            <input name="radio" type="radio" value="M" ><label class="separacion">Masculino</label>
+                            <br>
+                            <input name="radio" type="radio" value="F"><label class="separacion">Femenino</label>
+                        </p>
+                        <p>
+                            <label>Clase:</label><br>
+                            <input type="checkbox" name="letra[0]" value="a" /><label class="separacion">A</label>
+                            <br>
+                            <input type="checkbox" name="letra[1]" value="b" /><label class="separacion">B</label>
+                            <br>
+                            <input type="checkbox" name="letra[2]" value="c" /><label class="separacion">C</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="terminos" value="1"/><label class="separacion">¿Aceptas los terminos?</label>
+                        </p>
+                        <p><input type="submit"></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id="footSection">
+                <p id="pagina">
+                    <a href="index.html">PÁGINA ANTERIOR</a>
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>

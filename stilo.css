@@ -1,0 +1,223 @@
+/*---ETIQUETAS GENERALES---*/
+html,body{
+    /*width: 1280px;*/ /*Tamaño de la pagina html*/
+    margin: 0 auto;
+}
+
+section{
+    margin-bottom: 50px; /*Aumentar la separacion entre secciones*/
+}
+
+/*--HEADER--*/
+header{
+    width: 100%; /*Mide igual que el padre, el 100%*/
+    background-color: dimgray;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+}
+
+#loyola{    /*Imagen del logotipo de la fundacion loyola*/
+    float: left;
+    height: 65px;
+}
+
+#titulo{
+    font-size: xx-large;    /*Cambio de tamaño de la letra del titulo*/
+    margin-top: 0px;
+}
+
+#Hdatos{
+    /*Poner una imagen en el fondo y con cover hacemos que esa imagen ocupe el contenedor entero*/
+    background-image: url("https://img.freepik.com/fotos-premium/color-azul-fondo-borroso_39406-183.jpg");
+    background-size: cover;
+}
+
+/*----NAVER---*/
+nav{
+    width: 100%; /*Mide igual que el padre, el 100%*/
+}
+
+#menu{
+    /*El menu mide 1240px de ancho. Tiene 40 px de padding left. El padre tiene un ancho de 1280px*/
+    width: 96.875%; /*Equivale al 96.875% del padre*/
+    height: 45px;
+    list-style: none;
+    background-color: lightslategray;
+    position: sticky;
+    top: 0px;
+    margin-top: 0px;
+}
+
+#menu>li{
+    /*El padre tiene un ancho de 1240px*/
+    width: 12.0968%;  /*El ancho de cada li es de 150 px. Equivale al 12.0968% del padre*/
+    height: 30px;
+    margin: 0% 1.451613%; /*Cada li tiene 18px de margen en la izquierda y derecha. Lo que equivale al 1.451613%*/
+    padding-top: 12px;
+    text-align: center;
+    float: left;
+}
+
+#menu>li>a{
+    text-decoration: none;  /*Quitar la linea de abajo del enlace*/
+    color: seashell;
+}
+
+#menu>li>a:hover{
+    color: black;
+}
+
+/*---MAIN---*/
+main{
+    /*El tamaño del contenido de el contenedor main es de 1000px*/
+    /* Tamaño del contenedor padre 1280 (inicialmente). 1000px corresponden al 79.125%
+    */
+    width: 78.125%;
+    /*El tamaño de los margenes a izquierda y derecha corresponde a 10.9375% del elemento padre. Inicialmente eran 140 px*/
+    margin: 0% 10.9375%;
+    /*El tamaño total del contenedor main es de 1280 px*/
+}
+
+/*SECTION INTRODUCCION*/
+#in p{
+    /*Los parrafos tienen un espacio de 10px a la derecha e izquierda. Su padre mide 1000px por lo que equivale al 1%*/
+    padding: 0% 1%;
+}
+
+#in table{
+    /*El tamaño de la tabla padre es de 1000px y el tamaño del contenido es de 1000px por lo que ocupa un 100% del tamaño del padre*/
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+#in td{
+    /*El tamaño del contenido de cada celda es de 333px. El contenedor padre mide 1000px por lo que ocupa un 33.3% del contenedor padre*/
+    width: 33.3%;
+    padding: 0%;
+}
+
+#in figure{
+    /*El padre de cada figure son las celdas y cada una de ellas mide 333px*/
+    /*El borde mide 2px. Los bordes siempre son en pixeles.*/
+    border: 2px solid black;
+    /*El tamaño de los margenes del figure es de un total de 60 px en el ancho.
+    El padre mide 333px y queremos que el margen sea de 30px por lo que 30px ocupan un 9.0009%% del padre*/
+    margin: 16px 9.0009%;
+    /*El tamaño del contenido del figure es de 269px. Lo que equivale al 80.70% del padre*/
+    width: 80.70%;
+    /*El total del figure es de 333px*/
+}
+
+#in img{
+    /*El tamaño del contenido de la imagen es de 269px y el del padre es de 269px por lo que la imagen ocupa el 100% del padre*/
+    width: 100%;
+}
+
+#in figcaption{
+    text-align: center;
+}
+
+/*---FOOTER---*/
+footer{
+    background-color: lightslategray;
+    width: 100%;  /*Mide lo mismo que el padre por lo que es el 100%*/
+    text-align: center;
+}
+
+#pagina{
+    /*El padre mide 1280px*/
+    width: 11.7188%;   /*La medida de 150px equivale al 11.7188% del padre*/
+    padding: 12px 0px;  /*El padding superior e inferior son de 12 px*/
+    margin: auto; /*Centrar el contenido*/
+}
+
+#pagina>a{
+    text-decoration: none;    /*Quitar la linea de abajo del enlace*/
+}
+
+#pagina>a:hover{
+    background-color: dimgray;
+    color: black;
+}
+
+#footSection{
+    margin-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: coral;
+}
+
+/*---Extra (span)---*/
+/*Estas clases seran usadas para la etiqueta span*/
+/*Clase para cambiar la letra a negrita*/
+.negrita{
+    font-weight: bold;
+    font-size: large;
+}
+
+/*Clase para cambiar la letra al color rojo con cambio de fuente*/
+.letraRoja{
+    color: red;
+    font-family: Arial;
+}
+
+/*Clase para poner la letra en cursiva*/
+.cursiva{
+    font-style: italic;
+}
+
+/*Clase para subrayar letra*/
+.underline{
+    text-decoration: underline;
+}
+
+/*---FORMULARIO---*/
+form{
+    margin-bottom: 0px;
+}
+
+
+#fo div{
+    /*El tamaño de los margenes del div es de un total de 230 px en el ancho. 230 px por cada lado
+    Equivale a un 23% del padre*/
+    margin: 0% 23%;
+    /*El tamaño del contenido del div es de 500px. Equivale a un 50% del padre*/
+    width: 50%; /*El padre mide 1000px por lo que 500px es el 50%*/
+    /*El tamaño de los padding del div es de un total de 40 px en el ancho. 20px por cada lado.
+    Cada lado equivale a un 2% del padre*/
+    padding: 0% 2%;
+    /*El total del ancho del padre del div es de 1000px*/
+}
+
+#fo p{
+    /*Los parrafos tienen un espacio de 10px a la derecha e izquierda. Su padre mide 500px por lo que equivale al 2%*/
+    padding: 0% 2%;
+}
+
+.separacion{
+    /*El tamaño de la separacion por la izquierda es de 3px. El padre (p) mide 480px. Equivale al 0.625% del padre*/
+    padding-left: 0.625%;
+}
+
+input[type=text]{
+    background-color: lightblue;
+    /*El tamaño del contenido del ancho del input type text es de 350px. El padre mide 480px. Equivale a un 72.917% del padre*/
+    width: 72.917%;
+}
+
+input[type=submit]{
+    /*El tamaño del contenido del ancho del input type submit es de 100px. El padre mide 480px. Equivale al 20.835% del padre*/
+    width: 20.835%;
+    background-color: black;
+    color: white;
+}
+select{
+    /*El tamaño del contenido del Select es de 100px. El padre mide 480px. Equivale al 20.835% del padre*/
+    width: 20.835%;
+}
